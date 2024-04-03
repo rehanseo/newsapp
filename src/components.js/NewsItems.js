@@ -2,8 +2,17 @@ import React, { Component } from 'react'
 
 export default class NewsItems extends Component {
   render() {
+    let {title, description} = this.props;
     return (
-      <div>This is a news Item component</div>
+      <div>
+      <div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="..."/>
+      <div class="card-body">
+        <h5 class="card-title">{title}</h5>
+        <p class="card-text">{description}</p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+    </div></div>
     )
   }
 }
